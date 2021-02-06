@@ -13,6 +13,12 @@ class MealTableViewCell: UITableViewCell {
     // MARK: Properties
     
     public static let identifier = "MealTableViewCell"
+    
+    var meal: Meal? = nil {
+        didSet {
+            updateView()
+        }
+    }
 
     // MARK: Views
     
@@ -67,5 +73,11 @@ class MealTableViewCell: UITableViewCell {
         contentView.addSubview(ratingControl)
         ratingControl.topAnchor.constraint(equalTo: nameLabel.bottomAnchor, constant: 4).isActive = true
         ratingControl.leftAnchor.constraint(equalTo: photoImageView.rightAnchor, constant: 8).isActive = true
+    }
+    
+    private func updateView() {
+        nameLabel.text = meal?.name
+        photoImageView.image = meal?.photo
+        ratingControl.rating = meal?.rating ?? 0
     }
 }
