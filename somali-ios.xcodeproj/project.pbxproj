@@ -16,7 +16,7 @@
 		8273B4D525CE09CF0053DB6D /* somali_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8273B4D425CE09CF0053DB6D /* somali_iosTests.swift */; };
 		8273B4E025CE09CF0053DB6D /* somali_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8273B4DF25CE09CF0053DB6D /* somali_iosUITests.swift */; };
 		8273B4EF25CE11710053DB6D /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8273B4EE25CE11710053DB6D /* Meal.swift */; };
-		8273B4F225CE15B50053DB6D /* MealTableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8273B4F125CE15B50053DB6D /* MealTableCellView.swift */; };
+		8273B4F225CE15B50053DB6D /* MealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8273B4F125CE15B50053DB6D /* MealTableViewCell.swift */; };
 		8273B4F425CE16FA0053DB6D /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8273B4F325CE16FA0053DB6D /* RatingControl.swift */; };
 /* End PBXBuildFile section */
 
@@ -53,7 +53,7 @@
 		8273B4DF25CE09CF0053DB6D /* somali_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = somali_iosUITests.swift; sourceTree = "<group>"; };
 		8273B4E125CE09CF0053DB6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8273B4EE25CE11710053DB6D /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
-		8273B4F125CE15B50053DB6D /* MealTableCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTableCellView.swift; sourceTree = "<group>"; };
+		8273B4F125CE15B50053DB6D /* MealTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTableViewCell.swift; sourceTree = "<group>"; };
 		8273B4F325CE16FA0053DB6D /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -147,7 +147,7 @@
 		8273B4F025CE15A50053DB6D /* views */ = {
 			isa = PBXGroup;
 			children = (
-				8273B4F125CE15B50053DB6D /* MealTableCellView.swift */,
+				8273B4F125CE15B50053DB6D /* MealTableViewCell.swift */,
 				8273B4F325CE16FA0053DB6D /* RatingControl.swift */,
 			);
 			path = views;
@@ -286,7 +286,7 @@
 			files = (
 				8273B4EF25CE11710053DB6D /* Meal.swift in Sources */,
 				8273B4C225CE09CE0053DB6D /* ViewController.swift in Sources */,
-				8273B4F225CE15B50053DB6D /* MealTableCellView.swift in Sources */,
+				8273B4F225CE15B50053DB6D /* MealTableViewCell.swift in Sources */,
 				8273B4BE25CE09CE0053DB6D /* AppDelegate.swift in Sources */,
 				8273B4F425CE16FA0053DB6D /* RatingControl.swift in Sources */,
 				8273B4C025CE09CE0053DB6D /* SceneDelegate.swift in Sources */,
