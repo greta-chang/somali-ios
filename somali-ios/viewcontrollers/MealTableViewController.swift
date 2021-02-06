@@ -71,6 +71,10 @@ class MealTableViewController: UIViewController, UITableViewDelegate, UITableVie
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("Selected item \(indexPath.row)")
+    }
+    
     // MARK: Private methods
     private func loadSampleMeals() {
         let photo1 = UIImage(named: "meal1")
