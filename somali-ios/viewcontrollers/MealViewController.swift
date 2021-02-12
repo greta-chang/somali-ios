@@ -64,6 +64,23 @@ class MealViewController: UIViewController,
     
     // MARK: private methods
     private func initView() {
+        view.backgroundColor = .white
+        
+        // Set up navigation bar
+        let cancelButton = UIBarButtonItem(
+            barButtonSystemItem: UIBarButtonItem.SystemItem.cancel,
+            target: self,
+            action: #selector(cancelClicked)
+        )
+        let saveButton = UIBarButtonItem(
+            barButtonSystemItem: UIBarButtonItem.SystemItem.save,
+            target: self,
+            action: #selector(saveClicked))
+        self.navigationItem.leftBarButtonItem = cancelButton
+        self.navigationItem.rightBarButtonItem = saveButton
+        self.navigationItem.title = "New Meal"
+        
+        // Set up stack view
         let stackView = UIStackView().withoutAutoConstraints()
         view.addSubview(stackView)
         stackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 8).isActive = true
@@ -98,5 +115,13 @@ class MealViewController: UIViewController,
         // Make sure ViewController is notified when the user picks an image
         imagePickerController.delegate = self
         present(imagePickerController, animated: true, completion: nil)
+    }
+    
+    @objc private func cancelClicked() {
+        print("cancelClicked")
+    }
+    
+    @objc private func saveClicked() {
+        print("saveClicked")
     }
 }

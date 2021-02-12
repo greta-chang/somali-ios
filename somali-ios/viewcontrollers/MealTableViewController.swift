@@ -26,11 +26,11 @@ class MealTableViewController: UIViewController, UITableViewDelegate, UITableVie
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setUpTableView()
+        initView()
         loadSampleMeals()
     }
     
-    private func setUpTableView() {
+    private func initView() {
         
         view.backgroundColor = .white
         
@@ -109,8 +109,9 @@ class MealTableViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     
     @objc private func addItem() {
-        print("addItem")
-        
+        let mealViewController = MealViewController()
+        let navigationController = UINavigationController(rootViewController: mealViewController)
+        self.present(navigationController, animated: true)
     }
 
 }
