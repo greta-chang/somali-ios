@@ -31,6 +31,18 @@ class MealTableViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     
     private func setUpTableView() {
+        
+        view.backgroundColor = .white
+        
+        // Set up navigation bar
+        let addButton = UIBarButtonItem(
+            barButtonSystemItem: UIBarButtonItem.SystemItem.add,
+            target: self,
+            action: #selector(addItem)
+        )
+        self.navigationItem.rightBarButtonItem = addButton
+        self.navigationItem.title = "Your meals"
+        
         // Add tableView to the root view
         view.addSubview(tableView)
         
@@ -94,6 +106,11 @@ class MealTableViewController: UIViewController, UITableViewDelegate, UITableVie
         }
         
         meals += [meal1, meal2, meal3]
+    }
+    
+    @objc private func addItem() {
+        print("addItem")
+        
     }
 
 }
